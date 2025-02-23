@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rastgele Karakter Oluşturucu</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container mt-5">
+    <h1 class="text-center mb-4">Rastgele Karakter Oluşturucu</h1>
+    <div class="form-group">
+      <label for="karakterTuru">Karakter Türü:</label>
+      <select id="karakterTuru" class="form-control">
+        <option value="modern">Modern</option>
+        <option value="bilimKurgu">Bilim Kurgu</option>
+        <option value="fantastik">Fantastik</option>
+      </select>
+    </div>
+    <button id="olusturDugmesi" class="btn btn-primary mb-3">
+      Karakter Oluştur
+    </button>
+    <button id="kaydetDugmesi" class="btn btn-success mb-3">
+      Karakteri Kaydet
+    </button>
+    <button id="olusturHikayeDugmesi" class="btn btn-info mb-3">
+      Hikaye Oluştur
+    </button>
+    <div id="karakterBilgileri" class="border p-3 mb-3">
+      <p id="karakterAdi"></p>
+      <p id="karakterYasi"></p>
+      <p id="karakterMeslegi"></p>
+      <p id="karakterKisilik"></p>
+      <p id="karakterBoy"></p>
+      <p id="karakterKilo"></p>
+      <p id="karakterSacRengi"></p>
+      <p id="karakterGozRengi"></p>
+      <p id="karakterHikayesi"></p>
+    </div>
+    <h2>Kaydedilen Karakterler</h2>
+    <ul id="kaydedilenKarakterler" class="list-group"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
